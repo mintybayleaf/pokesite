@@ -10,7 +10,6 @@ I did this for learning fun! There are so many javascript frameworks out there b
 
 # Screenshots
 
-<img width="1655" alt="Screenshot 2023-05-01 at 12 05 52 AM" src="https://user-images.githubusercontent.com/18631945/235405322-e524b0a7-3474-48d2-99bd-e2771ac0ed6b.png">
+![image](https://user-images.githubusercontent.com/18631945/235550513-d3c49fa9-b9fe-4afa-a9fd-db9038e157a4.png)
 
-
-<img width="1728" alt="Screenshot 2023-05-01 at 12 05 12 AM" src="https://user-images.githubusercontent.com/18631945/235405324-80b5dcdf-b34a-41c8-8fb3-d5613a5027b2.png">
+![image](https://user-images.githubusercontent.com/18631945/235550557-cccce164-e89a-4fe2-ae4a-c21b90571f18.png)
