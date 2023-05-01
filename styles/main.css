@@ -4,6 +4,8 @@
   --dark-gray: #151618;
   --light-gray: #25282c;
   --off-white: #d1d3dc;
+  --main-color: tomato;
+  --secondary-color: sandybrown;
 }
 
 * {
@@ -19,14 +21,14 @@ body {
 
 h1 {
   font-family: "Lily Script One";
-  text-shadow: 10px 10px 10px tomato;
+  text-shadow: 10px 10px 10px var(--main-color);
   text-align: center;
 }
 
 h3 {
   color: var(--light-gray);
   font-family: "Lily Script One";
-  text-shadow: 0 0 10px sandybrown;
+  text-shadow: 0 5px 10px var(--secondary-color);
   text-align: center;
   text-transform: capitalize;
 }
@@ -56,39 +58,16 @@ p {
 }
 
 .card {
-  background-color: tomato;
+  background-color: var(--main-color);
   border-radius: 25%;
-  box-shadow: 10px 10px 10px var(--off-white);
+  box-shadow: 10px 10px 10px var(--secondary-color);
   min-width: 30ch;
   text-align: center;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(0.8);
-    box-shadow: 10px 10px 40px tomato;
-  }
-  50% {
-    transform: scale(0.9);
-    box-shadow: 10px 10px 20px tomato;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes grow {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.75);
-  }
+  transition: all 0.4s ease-in-out;
 }
 
 .card:hover {
   cursor: pointer;
   background-color: cyan;
-  animation: grow 2s;
-  box-shadow: 10px 10px 10px tomato;
+  transform: scale(1.5);
 }
