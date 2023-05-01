@@ -5,6 +5,7 @@ A website dedicated to pokemon.
 - Uses modern ES6 javascript syntax and modules with no frameworks
 - Uses modern CSS3 styling with flexbox and keyframe animations
 - Uses the free pokeapi to fetch and then cache results in the browser
+- Implements pagination/caching on scrolling so we do not spam the the pokeapi (be nice to your free APIs!!)
 
 I did this for learning fun! There are so many javascript frameworks out there but building simple sites is not that hard and this is an attribution to that idea. I hope you enjoy learning from this because I know I did!
 
