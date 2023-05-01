@@ -6,9 +6,20 @@
     <meta name="author" content="mintybayleaf" />
     <meta name="description" content="A site about pokemon" />
     <title>Pokesite</title>
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
+  <script type="module" src="js/cache.js"></script>
   <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/card.js"></script>
   <body>
-    <main>Hello World!</main>
+    <header>
+      <h1>~ A site about pokemon ~</h1>
+    </header>
+    <main id="container"></main>
+    <footer id="footer"></footer>
   </body>
+  <script defer>
+    const footer = document.getElementById("footer");
+    footer.innerHTML = `<span>Pokesite &#169; Bailey Kocin ${new Date().getFullYear()}</span>`;
+  </script>
 </html>

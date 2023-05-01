@@ -1,0 +1,94 @@
+@import "https://fonts.googleapis.com/css?family=Lily+Script+One";
+
+:root {
+  --dark-gray: #151618;
+  --light-gray: #25282c;
+  --off-white: #d1d3dc;
+}
+
+* {
+  color: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  background-color: var(--dark-gray);
+  color: var(--off-white);
+}
+
+h1 {
+  font-family: "Lily Script One";
+  text-shadow: 10px 10px 10px tomato;
+  text-align: center;
+}
+
+h3 {
+  color: var(--light-gray);
+  font-family: "Lily Script One";
+  text-shadow: 0 0 10px sandybrown;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+p {
+  color: var(--light-gray);
+  font-family: sans-serif;
+  font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+#container {
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto;
+}
+
+#footer {
+  display: fixed;
+  top: 90vh;
+  text-align: center;
+  font-family: "Lily Script One";
+  color: white;
+  min-height: 5vh;
+}
+
+.card {
+  background-color: tomato;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px var(--off-white);
+  min-width: 30ch;
+  text-align: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    box-shadow: 10px 10px 40px tomato;
+  }
+  50% {
+    transform: scale(0.9);
+    box-shadow: 10px 10px 20px tomato;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.75);
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: cyan;
+  animation: grow 2s;
+  box-shadow: 10px 10px 10px tomato;
+}
